@@ -60,9 +60,6 @@ int   ini_putf(const TCHAR *Section, const TCHAR *Key, INI_REAL Value, const TCH
 
 #if defined __cplusplus
 
-#if defined __WXWINDOWS__
-	#include "wxMinIni.h"
-#else
   #include <string>
 
   /* The C++ class in minIni.h was contributed by Steven Van Ingelgem. */
@@ -139,7 +136,6 @@ int   ini_putf(const TCHAR *Section, const TCHAR *Key, INI_REAL Value, const TCH
     std::string iniFilename;
   };
 
-#endif /* __WXWINDOWS__ */
 #endif /* __cplusplus */
 
 #endif /* MININI_H */
